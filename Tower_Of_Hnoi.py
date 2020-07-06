@@ -10,3 +10,14 @@ def Tower_Of_Hnoi(NumberOfPices, From_Source, Destination_Rode, Extra_Rode):
         Step += 1
         Tower_Of_Hnoi(NumberOfPices-1, Extra_Rode, Destination_Rode, From_Source)
 Tower_Of_Hnoi(3, "A", "C", "B")
+
+
+print("------------------------Another code-------------------------------")
+def Tower_Hnoi(NumberOfPeg, Source, Destination, Spare):
+    if NumberOfPeg == 1:
+        print("Move From ",Source," To ",Destination )
+    else:
+        Tower_Hnoi(NumberOfPeg-1, Source, Spare, Destination)
+        Tower_Hnoi(1, Source, Destination, Spare)
+        Tower_Hnoi(NumberOfPeg-1, Spare, Destination,Source)
+Tower_Hnoi(3, 'A', 'C', 'B')
