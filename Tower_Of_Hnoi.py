@@ -11,6 +11,7 @@ def Tower_Of_Hnoi(NumberOfPices, From_Source, Destination_Rode, Extra_Rode):
         Tower_Of_Hnoi(NumberOfPices-1, Extra_Rode, Destination_Rode, From_Source)
 Tower_Of_Hnoi(3, "A", "C", "B")
 
+# Both code hase same output but Secondone is easy to understand
 
 print("------------------------Another code-------------------------------")
 def Tower_Hnoi(NumberOfPeg, Source, Destination, Spare):
